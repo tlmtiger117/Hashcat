@@ -1,0 +1,50 @@
+# 12/05/26
+
+- Tipos de hash:
+  
+   - -m 0 -> MD5 = 32 hex (sem salt, muito comum em leaks antigos)
+   - -m 100 -> SHA1 = 40 hex (sem salt, antigo)
+   - -m 1400 -> SHA256 = 64 hex (sem salt, padrão moderno)
+   - -m 1700 -> SHA512 = 128 hex (hash longo)
+   - -m 1000 -> NTLM = 32 hex (Windows login hash)
+   - -m 3000 -> LM = 32 hex maiúsculo (Windows antigo, fraco)
+   - -m 5500 -> NetNTLMv1 = auth network (Windows login rede)
+   - -m 5600 -> NetNTLMv2 = auth rede mais seguro
+   - -m 3200 -> bcrypt = $2a/$2b/$2y (começa com $2)
+   - -m 1800 -> sha512crypt (Linux) = $6$ (Linux password)
+   - -m 500 -> md5crypt (Linux) = $1$ (Linux antigo)
+   - -m 1500 -> descrypt (Linux) = 13 chars (muito antigo)
+   - -m 7400 -> sha256crypt (Linux) = $5$ (Linux password)
+   - -m 22000 -> WPA/WPA2 = handshake Wi-Fi (.22000 file)
+   - -m 2500 -> WPA antigo = capture Wi-Fi legado
+   - -m 900 -> MD4 = 32 hex (base Windows)
+   - -m 1300 -> SHA224 = 56 hex (variante SHA2)
+   - -m 17300 -> SHA3-224 = SHA3 família (224 bits)
+   - -m 17400 -> SHA3-256 = SHA3 padrão moderno
+   - -m 17600 -> SHA3-512 = SHA3 longo
+   - -m 1410 -> SHA256 + salt = 64 hex + salt separado
+   - -m 1710 -> SHA512 + salt = 128 hex + salt
+   - -m 11 -> Joomla MD5 = CMS Joomla hash
+   - -m 400 -> phpass = $P$ (WordPress antigo)
+   - -m 2611 -> vBulletin = forum hash MD5 custom
+   - -m 2711 -> vBulletin >= 3.8.5 = versão nova hash
+   - -m 7900 -> Drupal7 = CMS Drupal hash
+   - -m 21 -> osCommerce = ecommerce MD5
+   - -m 1600 -> Apache APR1 = $apr1$ (Apache .htpasswd)
+   - -m 10000 -> Django PBKDF2-SHA256 = iterated hash (Django)
+   - -m 10900 -> PBKDF2-HMAC-SHA256 = password derivation
+   - -m 12100 -> PBKDF2-HMAC-SHA512 = derivation mais forte
+   - -m 8900 -> scrypt = memory-hard hash ($s0$)
+   - -m 15700 -> Ethereum Wallet = blockchain wallet hash
+   - -m 11300 -> Bitcoin/Litecoin wallet.dat = wallet criptografada
+   - -m 13600 -> ZIP = arquivo zip senha
+   - -m 17200 -> PKZIP = zip antigo/variante
+   - -m 12500 -> RAR3 = rar antigo
+   - -m 13000 -> RAR5 = rar moderno
+   - -m 11600 -> 7-Zip = arquivo .7z
+   - -m 9600 -> Office 2013 = documentos Office modernos
+   - -m 9700 -> Office 2010 = Office antigo
+   - -m 9800 -> Office 2013 = variante Office (MS Office suite)
+   - -m 10400 -> PDF 1.1–1.3 = PDF antigo
+   - -m 10500 -> PDF 1.4–1.6 = PDF médio
+   - -m 10600 -> PDF 1.7 = PDF moderno
